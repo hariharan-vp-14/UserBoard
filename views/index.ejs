@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex flex-col">
+
+  <!-- Top-left heading and link -->
+  <div class="p-5">
+    <h1 class="text-3xl tracking-tight mb-2">Create User</h1>
+    <a class="text-blue-500" href="/read">Read Users</a>
+  </div>
+
+  <!-- Form centered -->
+  <div class="flex flex-1 justify-center items-center">
+    <form action="/create" method="post" class="flex flex-col gap-4 w-96">
+      <input class="px-5 py-2 bg-transparent border-2 border-zinc-800 rounded-lg" type="text" name="name" placeholder="Name">
+      <input class="px-5 py-2 bg-transparent border-2 border-zinc-800 rounded-lg" type="text" name="email" placeholder="Email">
+      <input class="px-5 py-2 bg-transparent border-2 border-zinc-800 rounded-lg" type="text" name="image" placeholder="Image URL">
+      <input class="px-5 py-2 bg-blue-500 rounded-lg cursor-pointer hover:bg-blue-600" type="submit" value="Create User">
+    </form>
+  </div>
+
+</body>
+</html>
