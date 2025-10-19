@@ -14,7 +14,7 @@
 // const mongoose = require("mongoose");
 
 // // Connect to MongoDB
-// mongoose.connect("mongodb://localhost:27017/mydb")
+// mongoose.connect("mongodb+srv://hhvp14:Hari7194@cluster0.sng8ujf.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0")
 //   .then(() => console.log("✅ MongoDB connected"))
 //   .catch((err) => console.log("❌ MongoDB connection error:", err));
 
@@ -38,7 +38,7 @@
 const mongoose = require("mongoose");
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/mydb")
+mongoose.connect("mongodb+srv://hhvp14:Hari7194@cluster0.sng8ujf.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.log("❌ MongoDB connection error:", err));
 
